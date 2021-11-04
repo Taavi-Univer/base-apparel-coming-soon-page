@@ -14,7 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile view:
+![](./design/taavi-univer.github.io_base-apparel-coming-soon-page_mobile.png)
 
 ### Links
 
