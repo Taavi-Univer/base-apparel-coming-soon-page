@@ -23,7 +23,7 @@ Desktop view:
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/baseapparelcomingsoonpage-OFuWLvlcG
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://taavi-univer.github.io/base-apparel-coming-soon-page/)
 
 ## My process
 
