@@ -17,6 +17,9 @@ Users should be able to:
 Mobile view:
 ![](./design/taavi-univer.github.io_base-apparel-coming-soon-page_mobile.png)
 
+Desktop view:
+![](./design/taavi-univer.github.io_base-apparel-coming-soon-page_desktop.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
