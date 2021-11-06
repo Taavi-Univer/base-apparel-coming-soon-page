@@ -1,0 +1,210 @@
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 23.438em;
+  text-align: center;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2em;
+}
+
+.hero-img-desktop {
+  display: none;
+}
+
+.container {
+  margin-top: 3em;
+}
+
+h1 {
+  color: var(--Desaturated-Red);
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+  line-height: 2.7rem;
+  margin-bottom: 0.3em;
+}
+
+span {
+  color: var(--Dark-Grayish-Red);
+  font-weight: 600;
+}
+
+p {
+  color: var(--Desaturated-Red);
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  padding: 0 1.7rem;
+  margin-bottom: 2em;
+}
+
+.input-field {
+  position: relative;
+  padding: 0.06rem;
+}
+
+input {
+  width: 20rem;
+  height: 3rem;
+  border: 1px solid hsl(0, 36%, 90%);
+  border-radius: 25px;
+  padding-left: 1.9em;
+}
+
+.inputImage {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 109px;
+}
+
+.inputError {
+  border: 2px solid var(--Soft-Red);
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 80%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.submit-btn {
+  position: absolute;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  width: 70px;
+  height: 100%;
+  border: none;
+  top: 0;
+  right: 26px;
+  border-radius: 25px;
+  box-shadow: 0px 7px 17px 0px rgba(241, 133, 133, 0.4);
+  cursor: pointer;
+}
+
+.error-message {
+  display: none;
+  color: var(--Desaturated-Red);
+  font-size: smaller;
+  text-align: left;
+  padding: 0.7em 0 0 3.9em;
+}
+
+footer {
+  margin-top: 7em;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.6rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 90em) {
+  body {
+    background-image: url("/images/bg-pattern-desktop.svg"),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    background-position: center bottom;
+    padding: 2rem;
+  }
+
+  main {
+    min-width: 90em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "logo hero"
+      "container  hero"
+      "container  hero";
+
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 43.75em 38.125em;
+  }
+
+  .logo {
+    grid-area: logo;
+    padding-left: 4em;
+  }
+
+  .logo-img {
+    margin: 4em 0;
+  }
+
+  .container {
+    grid-area: container;
+    padding: 0 9em 0 4em;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 0;
+    padding-right: 4em;
+  }
+
+  input {
+    width: 27.5rem;
+    padding-left: 1.9em;
+  }
+
+  .inputImage {
+    right: 139px;
+  }
+
+  .submit-btn {
+    right: 51px;
+  }
+
+  .error-message {
+    padding-left: 1.9em;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img-desktop {
+    display: block;
+  }
+}

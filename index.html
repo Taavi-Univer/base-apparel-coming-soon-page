@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img class="logo-img" src="images/logo.svg" alt="base apparel logo" />
+      </div>
+      <div class="hero">
+        <img class="hero-img" src="images/hero-mobile.jpg" alt="woman" />
+        <img
+          class="hero-img-desktop"
+          src="images/hero-desktop.jpg"
+          alt="woman"
+        />
+      </div>
+      <div class="container">
+        <h1>
+          We're
+          <span>coming</span>
+          <span>soon</span>
+        </h1>
+
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div class="input-field">
+          <input id="input-field" type="email" placeholder="Email Address" />
+          <img class="inputImage" id="input-img" src="images/icon-error.svg" />
+          <button class="submit-btn" id="button">
+            <img src="images/icon-arrow.svg" alt="submit button" />
+          </button>
+        </div>
+        <p class="error-message" id="error-msg">Please provide a valid email</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Taavi-Univer" target="_blank"
+          >Taavi Univer</a
+        >.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
